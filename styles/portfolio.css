@@ -194,3 +194,66 @@ input{
 .contact a{
     text-decoration: none;
 }
+/* Resposive Styles */
+/* Small Device */
+@media screen and (max-width:576px) {
+   nav, 
+   .banner, 
+   .skills-container, 
+   .resume-content, 
+   .about-info-container, 
+   .contact{
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 20px;
+        h2.nav-title:{align-items: right:;
+
+        }
+    }
+    .banner{
+        margin: 0 20px;
+    }
+    .banner img{
+      width: 100%;  
+    }
+    nav ul {
+      flex-direction: column;
+      align-items: flex-start; 
+      gap: 20px; 
+    }
+    nav li{
+        margin-left: 0;
+      }  
+    .about{
+        padding: 20px;
+    }
+    .contact input[type="text"], input[type="email"], textarea{
+     padding: 0 0 0 5px;   
+    }
+}
+/* Medium Device */
+@media screen and (min-width: 577px) and (max-width:992px){
+    .about{
+        padding: 20px;
+        
+    }
+    .contact, .banner{
+        flex-direction: column;
+    }
+    .contact input[type="text"], input[type="email"], textarea{
+        padding: 0 0 0 5px;   
+       }
+       nav ul {
+        flex-direction: column;
+        align-items: flex-start; 
+        gap: 20px; 
+        padding-left: 20px;
+      }  
+      nav li{
+        margin-left: 0;
+
+    }  
+}
+.hide{
+    display: none;
+}
